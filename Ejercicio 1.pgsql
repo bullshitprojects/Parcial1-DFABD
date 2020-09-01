@@ -18,7 +18,7 @@ CREATE TABLE academic_materia (
     nombre_materia VARCHAR(100),
     uv_materia int,
     CONSTRAINT pk_id_materia PRIMARY KEY (id_materia)
-);--id facultad de manera simbólica, como ejemplo le asignaremos 1 para la facultad de Mariano
+);
 
 --Definiendo la tabla que almacena los datos de los ciclos
 CREATE TABLE academic_ciclo(

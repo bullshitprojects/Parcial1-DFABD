@@ -51,10 +51,10 @@ CREATE TABLE academic_nota_final(
 INSERT INTO academic_ciclo (year_ciclo, numero_ciclo) VALUES (2020,1);
 
 --Agregando datos a la tabla materia
-INSERT INTO academic_materia (nombre_materia, uv_materia, id_facultad) VALUES ('Fundamentos de Administración', 3);
-INSERT INTO academic_materia (nombre_materia, uv_materia, id_facultad) VALUES ('Introducción a la Economía I', 4);
-INSERT INTO academic_materia (nombre_materia, uv_materia, id_facultad) VALUES ('Principios de Contabilidad', 4);
-INSERT INTO academic_materia (nombre_materia, uv_materia, id_facultad) VALUES ('Principios de Matemática', 4);
+INSERT INTO academic_materia (nombre_materia, uv_materia) VALUES ('Fundamentos de Administración', 3);
+INSERT INTO academic_materia (nombre_materia, uv_materia) VALUES ('Introducción a la Economía I', 4);
+INSERT INTO academic_materia (nombre_materia, uv_materia) VALUES ('Principios de Contabilidad', 4);
+INSERT INTO academic_materia (nombre_materia, uv_materia) VALUES ('Principios de Matemática', 4);
 
 --Agregando datos a la tabla alumno
 INSERT INTO academic_alumno (carne_alumno, nombre_alumno, apellido_alumno) VALUES ('2020MR606', 'Mariano', 'Ramirez');
@@ -73,9 +73,9 @@ INNER JOIN academic_materia m ON m.id_materia = n.id_materia WHERE n.id_alumno =
 --Ejercicio 2: Cree una sentencia que le permita calcular el C.U.M de carrera para Mariano, teniendo en cuenta que ya cursó dos ciclos
 
 --Agregando las nuevas materias
-INSERT INTO academic_materia (nombre_materia, uv_materia, id_facultad) VALUES ('Comportamiento Organizacional', 3);
-INSERT INTO academic_materia (nombre_materia, uv_materia, id_facultad) VALUES ('Introducción a la Economía II', 4);
-INSERT INTO academic_materia (nombre_materia, uv_materia, id_facultad) VALUES ('Matemática I', 5);
+INSERT INTO academic_materia (nombre_materia, uv_materia) VALUES ('Comportamiento Organizacional', 3);
+INSERT INTO academic_materia (nombre_materia, uv_materia) VALUES ('Introducción a la Economía II', 4);
+INSERT INTO academic_materia (nombre_materia, uv_materia) VALUES ('Matemática I', 5);
 
 --Agregando nuevo ciclo 
 INSERT INTO academic_ciclo (year_ciclo, numero_ciclo) VALUES (2020,2);
